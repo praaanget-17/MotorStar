@@ -149,9 +149,9 @@ namespace MotorStar
             cmd.Parameters.AddWithValue("@RemainingBalance", RemainingBalance);
             cmd.Parameters.AddWithValue("@DateAccountCreated", DateTime.Now.ToString("MM-dd-yyyy"));
             cmd.Parameters.AddWithValue("@Status", "Pending");
-            cmd.Parameters.AddWithValue("@EmployeeId", textBox_monthly_salary.Text);
-            cmd.Parameters.AddWithValue("@CustomerId", textBox_source_income.Text);
-            cmd.Parameters.AddWithValue("@UnitId", textBox_pass.Text);
+            cmd.Parameters.AddWithValue("@EmployeeId", txtEmployeeId.Text);
+            cmd.Parameters.AddWithValue("@CustomerId", txtCustomerId.Text);
+            cmd.Parameters.AddWithValue("@UnitId", txtUnitId.Text);
 
             //OPEN CON AND EXEC insert       
             connection.Open();
