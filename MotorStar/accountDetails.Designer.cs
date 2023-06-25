@@ -32,12 +32,16 @@ namespace MotorStar
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtEmployeeName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEmployeeId = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTermsOfPayment = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtMaxTerm = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtDownPayment = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtTermsOfPayment = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMaxTerm = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAccountId = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -86,10 +90,6 @@ namespace MotorStar
             this.txtUnit = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.txtEmployeeId = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtEmployeeName = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -123,6 +123,69 @@ namespace MotorStar
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account Details";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(156, 73);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(95, 14);
+            this.label27.TabIndex = 17;
+            this.label27.Text = "Employee Name";
+            // 
+            // txtEmployeeName
+            // 
+            this.txtEmployeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmployeeName.DefaultText = "";
+            this.txtEmployeeName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmployeeName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmployeeName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmployeeName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmployeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeName.Location = new System.Drawing.Point(159, 87);
+            this.txtEmployeeName.Name = "txtEmployeeName";
+            this.txtEmployeeName.PasswordChar = '\0';
+            this.txtEmployeeName.PlaceholderText = "";
+            this.txtEmployeeName.SelectedText = "";
+            this.txtEmployeeName.Size = new System.Drawing.Size(127, 20);
+            this.txtEmployeeName.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 14);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Conducted By";
+            // 
+            // txtEmployeeId
+            // 
+            this.txtEmployeeId.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmployeeId.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtEmployeeId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtEmployeeId.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeId.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtEmployeeId.ItemHeight = 14;
+            this.txtEmployeeId.Items.AddRange(new object[] {
+            "CASH",
+            "3 Months",
+            "6 Months",
+            "12 Months",
+            "18 Months",
+            "24 Months",
+            "30 Months",
+            "36 Months"});
+            this.txtEmployeeId.Location = new System.Drawing.Point(9, 87);
+            this.txtEmployeeId.Name = "txtEmployeeId";
+            this.txtEmployeeId.Size = new System.Drawing.Size(127, 20);
+            this.txtEmployeeId.TabIndex = 14;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -132,6 +195,45 @@ namespace MotorStar
             this.label7.Size = new System.Drawing.Size(102, 14);
             this.label7.TabIndex = 6;
             this.label7.Text = "Terms of Payment";
+            // 
+            // txtDownPayment
+            // 
+            this.txtDownPayment.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDownPayment.DefaultText = "";
+            this.txtDownPayment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDownPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDownPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDownPayment.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDownPayment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDownPayment.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDownPayment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDownPayment.Location = new System.Drawing.Point(324, 40);
+            this.txtDownPayment.Name = "txtDownPayment";
+            this.txtDownPayment.PasswordChar = '\0';
+            this.txtDownPayment.PlaceholderText = "";
+            this.txtDownPayment.SelectedText = "";
+            this.txtDownPayment.Size = new System.Drawing.Size(127, 20);
+            this.txtDownPayment.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(321, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 14);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Down Payment";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(473, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 14);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Max Term Payment";
             // 
             // txtTermsOfPayment
             // 
@@ -157,16 +259,6 @@ namespace MotorStar
             this.txtTermsOfPayment.Size = new System.Drawing.Size(127, 20);
             this.txtTermsOfPayment.TabIndex = 12;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(473, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 14);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Max Term Payment";
-            // 
             // txtMaxTerm
             // 
             this.txtMaxTerm.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -185,35 +277,6 @@ namespace MotorStar
             this.txtMaxTerm.SelectedText = "";
             this.txtMaxTerm.Size = new System.Drawing.Size(127, 20);
             this.txtMaxTerm.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(321, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 14);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Down Payment";
-            // 
-            // txtDownPayment
-            // 
-            this.txtDownPayment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDownPayment.DefaultText = "";
-            this.txtDownPayment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDownPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDownPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDownPayment.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDownPayment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDownPayment.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDownPayment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDownPayment.Location = new System.Drawing.Point(324, 40);
-            this.txtDownPayment.Name = "txtDownPayment";
-            this.txtDownPayment.PasswordChar = '\0';
-            this.txtDownPayment.PlaceholderText = "";
-            this.txtDownPayment.SelectedText = "";
-            this.txtDownPayment.Size = new System.Drawing.Size(127, 20);
-            this.txtDownPayment.TabIndex = 4;
             // 
             // label2
             // 
@@ -915,7 +978,7 @@ namespace MotorStar
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(683, -1);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(677, -1);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(61, 43);
             this.guna2ControlBox1.TabIndex = 3;
@@ -935,74 +998,11 @@ namespace MotorStar
             this.guna2Button1.Text = "Save";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // txtEmployeeId
-            // 
-            this.txtEmployeeId.BackColor = System.Drawing.Color.Transparent;
-            this.txtEmployeeId.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtEmployeeId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtEmployeeId.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeId.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployeeId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtEmployeeId.ItemHeight = 14;
-            this.txtEmployeeId.Items.AddRange(new object[] {
-            "CASH",
-            "3 Months",
-            "6 Months",
-            "12 Months",
-            "18 Months",
-            "24 Months",
-            "30 Months",
-            "36 Months"});
-            this.txtEmployeeId.Location = new System.Drawing.Point(9, 87);
-            this.txtEmployeeId.Name = "txtEmployeeId";
-            this.txtEmployeeId.Size = new System.Drawing.Size(127, 20);
-            this.txtEmployeeId.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 14);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Conducted By";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(156, 73);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(95, 14);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Employee Name";
-            // 
-            // txtEmployeeName
-            // 
-            this.txtEmployeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmployeeName.DefaultText = "";
-            this.txtEmployeeName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmployeeName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmployeeName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployeeName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeName.Location = new System.Drawing.Point(159, 87);
-            this.txtEmployeeName.Name = "txtEmployeeName";
-            this.txtEmployeeName.PasswordChar = '\0';
-            this.txtEmployeeName.PlaceholderText = "";
-            this.txtEmployeeName.SelectedText = "";
-            this.txtEmployeeName.Size = new System.Drawing.Size(127, 20);
-            this.txtEmployeeName.TabIndex = 16;
-            // 
             // accountDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 535);
+            this.ClientSize = new System.Drawing.Size(737, 535);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.groupBox3);
