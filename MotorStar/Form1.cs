@@ -15,8 +15,6 @@ namespace MotorStar
     {
         dbConnection conn = new dbConnection();
         MySqlConnection con = new MySqlConnection();
-        MySqlCommand cmd;
-        MySqlDataAdapter adapter;
         DataTable dt = new DataTable();
 
         public Login()
@@ -38,7 +36,6 @@ namespace MotorStar
                 Properties.Settings.Default.password = "";
                 Properties.Settings.Default.Save();
             }
-
             if (login())
             {
                 Dashboard dash = new Dashboard(getName());
@@ -48,13 +45,11 @@ namespace MotorStar
             else
             {
                 MessageBox.Show("Failed to login");
-            }
-            
+            }        
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             guna2CheckBox1.Checked = true;
             txtUsername.Text = Properties.Settings.Default.username;
             txtPassword.Text = Properties.Settings.Default.password;
@@ -101,17 +96,15 @@ namespace MotorStar
 
             connection.Open();
 
-
             MySqlDataReader da = command.ExecuteReader();
             if (da.Read())
-            {
-                return da.GetValue(0).ToString();
+            {               
+                return da.GetValue(0).ToString();               
             }
             else
-            {
+            {         
                 return "";
-            }
-            connection.Close();
+            }        
         }
     }
 }

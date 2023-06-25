@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Configuration;
 using System.Windows.Forms;
 
 namespace MotorStar
@@ -18,10 +19,13 @@ namespace MotorStar
         private Point _start_point = new Point(0, 0);
         public string userName;
         dbConnection conn = new dbConnection();
+
+        private customerAddUpdateDelete custAddUpdateDelete;
+
         public Dashboard(string name)
         {
             InitializeComponent();
-            userName = name;
+            userName = name;          
         }
 
         private void guna2Panel4_MouseHover(object sender, EventArgs e)
@@ -200,6 +204,67 @@ namespace MotorStar
             {
                 ad.Focus();
             }
+        }
+
+        private void pnlCustomer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (custAddUpdateDelete == null || custAddUpdateDelete.IsDisposed)
+            {
+                custAddUpdateDelete = new customerAddUpdateDelete("Add");
+                custAddUpdateDelete.Show();
+            }
+            else
+            {
+                custAddUpdateDelete.Focus();
+            }
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (custAddUpdateDelete == null || custAddUpdateDelete.IsDisposed)
+            {
+                custAddUpdateDelete = new customerAddUpdateDelete("Delete");
+                custAddUpdateDelete.Show();
+            }
+            else
+            {
+                custAddUpdateDelete.Focus();
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            if (custAddUpdateDelete == null || custAddUpdateDelete.IsDisposed)
+            {
+                custAddUpdateDelete = new customerAddUpdateDelete("Show");
+                custAddUpdateDelete.Show();
+            }
+            else
+            {
+                custAddUpdateDelete.Focus();
+            }
+        }
+
+        private void EnableButtons()
+        {
+            btnAdd.Enabled = true;
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
+            btnShow.Enabled = true;
+        }
+
+        private void DisabaleButtons()
+        {
+            btnAdd.Enabled = false;
+            btnUpdate.Enabled = false;
+            btnDelete.Enabled = false;
+            btnShow.Enabled = false;
         }
     }
 

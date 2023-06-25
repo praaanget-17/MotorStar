@@ -194,6 +194,7 @@ namespace MotorStar
             this.Controls.Add(this.dgvCustomer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "customerList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "customerList";
             this.Load += new System.EventHandler(this.customerList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();

@@ -13,7 +13,6 @@ namespace MotorStar
 {
     public partial class customerList : Form
     {
-        private accountDetails account;
         dbConnection conn = new dbConnection();
         public customerList()
         {
